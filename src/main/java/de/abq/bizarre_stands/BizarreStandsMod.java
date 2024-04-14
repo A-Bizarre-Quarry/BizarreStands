@@ -32,8 +32,8 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(BizarreStands.MODID)
-public class BizarreStands
+@Mod(BizarreStandsMod.MODID)
+public class BizarreStandsMod
 {
     // Define mod id in a common place for everything to reference
     public static final String MODID = "bizarre_stands";
@@ -66,7 +66,7 @@ public class BizarreStands
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
-    public BizarreStands(IEventBus modEventBus)
+    public BizarreStandsMod(IEventBus modEventBus)
     {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
